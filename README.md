@@ -63,7 +63,7 @@ Nginx is configured to serve static files from the '/static/' path. Test this fu
 You should be able to upload an image at http://localhost:your_port_here/upload, and then view the image at http://localhost:your_port_here/media/IMAGE_FILE_NAME.
 
 Here is a gif showing how the process looks like. 
-[Example](https://github.com/danzhechen/flask-on-docker/blob/main/Example.gif)
+![Example](https://github.com/danzhechen/flask-on-docker/blob/main/Example.gif)
 
 ### Troubleshooting
 
