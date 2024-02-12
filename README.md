@@ -1,4 +1,4 @@
-# Flask on Docker aka.Small Instagram
+# Flask on Docker aka. Small Instagram
 
 Welcome to Small Instagram - a web service inspired by the foundational technology stack of Instagram. This project is designed as an educational tool to provide Dockerizing Flask with Postgres, Gunicorn, and Nginx for both development and production environments.
 
@@ -19,29 +19,29 @@ Before starting, ensure you have Docker and Docker Compose installed on your mac
 1. **Launching the Containers**: Build the image and run the containers.
    ```
    docker-compose up -d --build
-
+   ```
 2. **Testing out**: Make a test to see whether this webpage works.
    ```
    $ curl http://localhost:your_port_here
-
+   ```
    You should be able to receive output similar to below.
    ```
    "hello": "world"
-
+   ```
 ### Production Environment
 
 1. **Container Depolyment**: Build the image and run the containers.
    ```
    docker-compose -f docker-compose.prod.yml up -d --build
-
+   ```
 2. **Tesing out**: Make a test to see whether this webpage works.
    ``` 
    $ curl http://localhost:your_port_here
-   
+   ```
    You should be able to receive output similar to below.
    ```
    "hello": "world"
-
+   ```
 ### Database Initialization 
 
 To create or reset the database tables to track the users, execute the following:
@@ -49,11 +49,11 @@ To create or reset the database tables to track the users, execute the following
 **For Development**:
 ```
 docker-compose exec web python manage.py create_db
-
+```
 **For Production**:
 ```
 docker-compose -f docker-compose.prod.yml exec web python manage.py create_db
-
+```
 ### Serving Static Files & Media Files
 
 **Static Files**:
@@ -63,6 +63,7 @@ Nginx is configured to serve static files from the '/static/' path. Test this fu
 You should be able to upload an image at http://localhost:your_port_here/upload, and then view the image at http://localhost:your_port_here/media/IMAGE_FILE_NAME.
 
 Here is a gif showing how the process looks like. 
+[Example](https://github.com/danzhechen/flask-on-docker/blob/main/Example.gif)
 
 ### Troubleshooting
 
