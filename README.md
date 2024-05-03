@@ -1,4 +1,4 @@
-# Flask on Docker aka. Small Instagram
+# csci143-final-project
 
 Welcome to Small Instagram - a web service inspired by the foundational technology stack of Instagram. This project is designed as an educational tool to provide Dockerizing Flask with Postgres, Gunicorn, and Nginx for both development and production environments.
 
