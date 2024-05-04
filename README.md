@@ -1,4 +1,5 @@
 # csci143-final-project
+[![](https://github.com/danzhechen/final-project/workflows/tests/badge.svg)](https://github.com/danzhechen/final-project/actions?query=workflow%3Atests)
 
 Welcome to Small Instagram - a web service inspired by the foundational technology stack of Instagram. This project is designed as an educational tool to provide Dockerizing Flask with Postgres, Gunicorn, and Nginx for both development and production environments.
 
